@@ -1,4 +1,3 @@
-
 perg_1 = input("Sente dor no corpo? (s/n): ")
 perg_2 = input("Você tem febre? (s/n): ")
 perg_3 = input("Você tem tosse? (s/n): ")
