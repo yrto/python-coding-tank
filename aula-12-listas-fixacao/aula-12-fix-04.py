@@ -17,5 +17,5 @@ for i in lista:
         maiores += 1
 
 print(lista)
-print(media)
+print(media, "é a média")
 print(maiores, "números são maiores que a média")
