@@ -17,4 +17,3 @@ print(numero, "- Você acertou!")
 # numero aleatorio entre 1 e 40
 # peça número para usuário
 # dizer se está quente ou frio
-# enviar para walisson.silva@letscode-academy.com
