@@ -1,3 +1,7 @@
+# Faça um script para ler dois vetores, os quais armazenarão
+# o preço e a quantidade vendida de 10 produtos. Seu programa
+# deverá informar o valor arrecadado total e por produto.
+
 precos = []
 quantidade_vendida = []
 total = 0

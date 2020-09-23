@@ -1,3 +1,6 @@
+# Faça um script que recebe um texto da entrada
+# e exibe a maior palavra contida nesse texto.
+
 texto = input("Digite algo: ")
 texto_lista = texto.split(" ")
 

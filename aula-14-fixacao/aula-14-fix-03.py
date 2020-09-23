@@ -1,3 +1,6 @@
+# Escreva um programa que recebe um texto do
+# usuário e retorna o número de espaços existentes.
+
 # Exemplo 1
 # input: "bom dia"
 # output: texto contém 1 espaço

@@ -1,6 +1,8 @@
-# 1: Inserir livro (se a opção escolhida for essa, perguntar o nome do livro);
-# 2: Remover livro;
-# 3: Listar livros;
+# Faça um programa que simule uma pilha de livros, que inicialmente começa vazio. Um livro só poderá ser incluído no topo da pilha, assim como sua retirada, respeitando o tamanho máximo do vetor (10 livros). Usando laços, implemente opções de inserção, retirada, listagem da pilha e saida do programa.
+
+# 1: Inserir livro (se a opção escolhida for essa, perguntar o nome do livro)
+# 2: Remover livro
+# 3: Listar livros
 # 4: Sair do programa
 
 pilha_livros = []

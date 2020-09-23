@@ -1,3 +1,6 @@
+# Dada a lista abaixo (L), faça um script
+# que informe o somatório dos números em L.
+
 L = [[1, 2], [3, 4], [5, 6], [7, 8]]
 M = []
 
