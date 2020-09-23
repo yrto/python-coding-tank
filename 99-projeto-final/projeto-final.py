@@ -4,7 +4,7 @@
 
 # 1. visualizar tarefas
 # 2. adicionar tarefas
-# 3. atualizar tarefas
+# 3. atualizar tarefas   # escolher o id da tarefa, depois descricao, data, categoria
 # 4. remover tarefas
 # 0. fechar
 
