@@ -1,5 +1,3 @@
-# crie um script para gerenciar uma lista de tarefas
-
 # Bem-vindo ao PyTodo
 
 # 1. visualizar tarefas
@@ -7,15 +5,6 @@
 # 3. atualizar tarefas   # escolher o id da tarefa, depois descricao, data, categoria
 # 4. remover tarefas
 # 0. fechar
-
-# Escolha sua opção:
-
-# ---
-
-# Digite o número da tarefa:  # verificar se existe com "in" ou não pedir o número
-# Descrição:
-# Data:
-# Categoria:
 
 def print_menu():
     print()
@@ -41,27 +30,109 @@ while opcao != 0:
     if opcao == 1:
 
         print()
+        print("1. Visualizar tarefas")
+        print()
+
         for tarefa in tarefas:
-            print("Lista de tarefas")
+
             print("Tarefa", (tarefa + ":"),
                   tarefas[tarefa][0],
                   "|",
                   tarefas[tarefa][1],
-                  "|",
+                  "| Tags:",
                   tarefas[tarefa][2])
 
     elif opcao == 2:
 
-        print("2.")
+        print()
+        print("2. Adicionar tarefa")
+        print()
+
+        id_tarefa = input("Digite um ID para a tarefa (ex: 78): ")
+
+        while id_tarefa in tarefas:
+            id_tarefa = input("ID já existe, digite outro ID: ")
+
+        descricao_tarefa = input("Descreva a tarefa: ")
+        data_tarefa = input("Data da tarefa: ")
+        categoria_tarefa = input("Categoria da tarefa: ")
+        tarefas.update({id_tarefa: [
+                        descricao_tarefa,
+                        data_tarefa,
+                        categoria_tarefa]})
+
+        print()
+        print("Tarefa adicionada!")
 
     elif opcao == 3:
 
-        print("3.")
+        print()
+        print("3. Atualizar tarefa")
+        print()
+
+        for tarefa in tarefas:
+
+            print("Tarefa", (tarefa + ":"),
+                  tarefas[tarefa][0],
+                  "|",
+                  tarefas[tarefa][1],
+                  "| Tags:",
+                  tarefas[tarefa][2])
+
+        print()
+        id_tarefa = input("Qual tarefa (ID) você gostaria de atualizar? ")
+        print()
+
+        if id_tarefa in tarefas:
+
+            descricao_tarefa = input("Descreva novamente esta tarefa: ")
+            data_tarefa = input("Data da tarefa: ")
+            categoria_tarefa = input("Categoria da tarefa: ")
+            tarefas.update({id_tarefa: [
+                            descricao_tarefa,
+                            data_tarefa,
+                            categoria_tarefa]})
+
+        else:
+
+            print("ID inválido!")
 
     elif opcao == 4:
 
-        print("4.")
+        print()
+        print("4. Remover tarefas")
+        print()
 
-print()
-print("Saindo...")
-print()
+        for tarefa in tarefas:
+
+            print("Tarefa", (tarefa + ":"),
+                  tarefas[tarefa][0],
+                  "|",
+                  tarefas[tarefa][1],
+                  "| Tags:",
+                  tarefas[tarefa][2])
+
+        print()
+        id_tarefa = input("Qual tarefa (ID) você gostaria de remover? ")
+        print()
+
+        if id_tarefa in tarefas:
+
+            tarefas.pop(id_tarefa)
+            print("Tarefa", id_tarefa, "removido com sucesso!")
+
+        else:
+
+            print("ID inválido!")
+
+    elif opcao == 0:
+
+        print()
+        print("Saindo...")
+        print()
+        break
+
+    else:
+
+        print()
+        print("!!! Opção inválida !!!")
